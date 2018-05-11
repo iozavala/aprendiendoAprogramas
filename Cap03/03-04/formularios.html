@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fomrularios</title>
+  </head>
+  <body>
+    <h2>Creando Formularios</h2>
+      <form class="formularios">
+          <fieldset>
+            <legend>Tus datos</legend>
+              <label for="nombre">Nombre: </label>
+              <input type="text" name="nombre" id="nombre"placeholder="Nombre" autocomplete="on">
+
+              <br><br>
+              <label for="apellido">Apellido: </label>
+              <input type="text" name="apellido" id="apellido"placeholder="Apellido" autocomplete="on">
+              <br>
+              <label for="sexo">Sexo:</label> <br>
+              <input type="radio" id="sexo" name="sexo" value="hombre" checked autofocus>Hombre <br>
+              <input type="radio" id="sexo" name="sexo" value="mujer">Mujer <br>
+              <input type="radio" id="sexo" name="sexo" value="otro ">Otro <br>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+          <legend>Información sobre tu curso</legend>
+            <label for="turno">Turno :</label>
+            <select id="turno" class="turno" name="turno">
+              <option value="matutino">Matutino</option>
+              <option value="vespertino" selected >Vespertino</option>
+              <option value="nocturno">Nocturno</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <br>
+        <label>Que curso te gustaria agregar</label>
+        <input list="propuesta" name="encuesta">
+          <datalist id="propuesta" name="encuenta">
+            <option value="jQueri">
+            <option value="dsfdsfdsf">
+            <option value="sdfsdfds">
+            <option value="sdfdssdfsdf">
+          </datalist>
+        <br><br>
+        <input type="submit" value="Enviar">
+      </form>
+  </body>
+</html>
