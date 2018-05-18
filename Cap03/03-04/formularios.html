@@ -6,15 +6,15 @@
   </head>
   <body>
     <h2>Creando Formularios</h2>
-      <form class="formularios">
+      <form class="formularios" no> <!--novalidate-->
           <fieldset>
             <legend>Tus datos</legend>
               <label for="nombre">Nombre: </label>
-              <input type="text" name="nombre" id="nombre"placeholder="Nombre" autocomplete="on">
+              <input type="text" name="nombre" id="nombre"placeholder="Nombre" autocomplete="on" required>
 
               <br><br>
               <label for="apellido">Apellido: </label>
-              <input type="text" name="apellido" id="apellido"placeholder="Apellido" autocomplete="on">
+              <input type="text" name="apellido" id="apellido"placeholder="Apellido" autocomplete="on" required>
               <br>
               <label for="sexo">Sexo:</label> <br>
               <input type="radio" id="sexo" name="sexo" value="hombre" checked autofocus>Hombre <br>
@@ -25,10 +25,26 @@
               <input type="date" name="fechas">
               <input type="datetime-local" name="fechas">
 
+              <br><br>
+              <label>Correo Electronio</label><br>
+              <input type="email" name="email" placeholder="correo@dominio.com" required></input>
+
+              <br><br>
+              <label>Tu sitio Web</label><br>
+              <input type="url" name="sitioweb" placeholder="www.dominio.com"></input>
+
+              <br><br>
+              <label>Cuanto sabes de HTML</label><br>
+              <input type="range" name="puntaje" min="0" max="10"></input>
+
+              <br><br>
+              <label>Personas que vienen contigo</label>
+              <input type="number" name="cantidad" min="1" max="5"></input>
+
         </fieldset>
         <br>
         <br>
-aldkjasdlkhnasdjklhasnljhasljk
+
         <fieldset>
           <legend>Información sobre tu curso</legend>
             <label for="turno">Turno :</label>
@@ -72,6 +88,16 @@ aldkjasdlkhnasdjklhasnljhasljk
               <input type="color" name="color">
         </fieldset>
         <br>
+
+        <fieldset>
+          <legend>Usuario pasword</legend>
+          <label>Usuario: </label><br>
+          <input type="text" name="usuario" placeholder="usuario"></input><br>
+          <label>Password: </label><br>
+          <input type="password" name="password" placeholder="usuario" required></input><br>
+        </fieldset
+        <br>
+
         <button type="reset" disabled>Borrar </button>
         <button type="submit">Enviar </button>
       <!--  <input type="submit" value="Enviar"> -->
